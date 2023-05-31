@@ -47,9 +47,6 @@ struct ContentView: View {
         ])
     ]
     func setSelected(index:Int ){
-        Alamofire.request("https://httpbin.org/get").response { response in
-            debugPrint(response)
-        }
         withAnimation(Animation.easeInOut(duration: 0.2)) {
             finishedSelection = true
             selected = index
