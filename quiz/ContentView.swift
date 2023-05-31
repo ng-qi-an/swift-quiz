@@ -22,8 +22,8 @@ struct ContentView: View {
     @State private var showSheet = true
     var questions = [
         Question(text: "When is WWDC23?", options: [
+            Option(text: "June 1", correct: false),
             Option(text: "June 2", correct: false),
-            Option(text: "June 3", correct: false),
             Option(text: "June 4", correct: false),
             Option(text: "June 5", correct: true)
         ]),
